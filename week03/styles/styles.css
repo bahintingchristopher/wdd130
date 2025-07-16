@@ -1,15 +1,5 @@
-:root {
-    --heading-background-color: #f06;
-    --heading-text-color: #333;
-    --heading-font: 'Montserrat', helvetica, san-sefi;
-    --padding: 1rem;
-    --border: 1px solid rgb(0 0 0 / 0.1)
-}
-
-
-
 nav {
-    background-color: var(--heading-background-color);
+    background-color: darkblue;
     padding: 10px;
 }
 
@@ -20,10 +10,7 @@ nav a {
 }
 
 h1 {
-    background-color: var(--heading-background-color);
-    color: var(--heading-text-color);
-    font-family: var(--heading-font);
-    padding: var(--padding);
+    color: darkblue;
 }
 
 img {
