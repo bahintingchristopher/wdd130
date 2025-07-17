@@ -24,9 +24,8 @@ body {
 }
 
 header, main, footer {
-    width: 800px;
-    margin: auto;
-
+    width: 840px;
+    margin: 0 auto;
 }
 
 h1, h2 {
@@ -44,8 +43,7 @@ nav, p, section, article {
 }
 
 .hero {
-    position: relative;
-    
+    position: relative;    
 }
 
 .hero img {
@@ -55,7 +53,7 @@ nav, p, section, article {
 }
 
 h1 {
-    position: relative;
+    position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
@@ -65,7 +63,7 @@ h1 {
     color: #fff;    
 }
 
-.hero article {
+.hero article img {
     float: right;
     width: 125px;  
 }
