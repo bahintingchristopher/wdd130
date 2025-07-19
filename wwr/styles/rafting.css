@@ -7,10 +7,10 @@
     --body-font: "Fira Sans Condensed", sans-serif;
 }
 
-header {
+/* header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-}
+} */
 
 * {
     margin: 0;
@@ -43,7 +43,8 @@ nav, p, section, article {
 }
 
 .hero {
-    position: relative;    
+    position: relative;  
+      
 }
 
 .hero img {
@@ -63,7 +64,20 @@ h1 {
     color: #fff;    
 }
 
+article {
+    position: absolute;
+    top: 120px;
+    opacity: 0.7;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 .hero article img {
     float: right;
     width: 125px;  
+    margin: 20px;
+    border: 1px solid #fff;
+    box-shadow:  #c21111 0px 0px 10px;
 }
+
+
