@@ -433,6 +433,11 @@ footer {
     border: 1px solid var(--secondary-color);
     background-color: var(--primary-color);
 }
+footer p{
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
 
 footer .socialmedia img {
     width: 24px;
