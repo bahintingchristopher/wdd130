@@ -7,7 +7,6 @@
     --body-font: "Fira Sans Condensed", sans-serif;
 }
 
-
  header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -118,16 +117,14 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;   
-    color: #fff;    
+    color: var(--accent2-color)   
 }
 
 article {
     display: grid;
     position: absolute;
-    opacity: 0.7;
-    background-color: var(--primary-color);
-    color: #fff;
+    border: 2px solid var(--secondary-color);
+    color: var(--accent2-color)
 }
 
 article >h2 {
@@ -151,7 +148,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 80vh;
+    margin-top: 90vh;
   
 }
 
@@ -214,30 +211,6 @@ footer .socialmedia img {
     width: 24px;
     height: 24px;
 }
-
-:root {
-    --primary-color: #272932;
-    --secondary-color: #4D7EA8;
-    --accent1-color: #828489;
-    --accent2-color: #9E90A2;
-    --heading-font: "Montserrat", sans-serif;
-    --body-font: "Fira Sans Condensed", sans-serif;
-}
-
-
- header {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center; 
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    padding: 0 20px;
-    width: 840px;
-    margin: 0 auto;
-    margin-bottom: 0;
-       
-          
-} 
 
 .logo {
     margin-left: 30px;    
@@ -334,14 +307,14 @@ nav, p, section, article {
 
 article {
     display: flex;
+    margin-top: 70px;
     justify-content: space-between;
     align-items: center;
     text-align: left;
     gap: 20px;
-    position: absolute;
-    top: 90px;
-    opacity: 0.7;
-    color: #fff;
+    position: relative;
+    top: 10px;
+    color: var(--accent1-color)
 }
 
 article h2 {
@@ -358,6 +331,7 @@ article p{
 
 .hero article {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: center;
     text-align: left;
@@ -367,7 +341,8 @@ article p{
 
 .hero article img {
     float: right;
-    width: 125px;  
+    width: 125px;
+    max-width: 100%;  
     margin: 20px;
     border: 1px solid #fff;
     box-shadow:  #c21111 0px 0px 10px;
@@ -460,8 +435,12 @@ header, footer {
 
 div.hero {
     border: 1px solid var(--secondary-color);
+    width: 840px;
+    height: 300px;
     margin-top: 5px;
+    max-width: 100%;
     margin-bottom: 5px;
+
 }
 
 section {
