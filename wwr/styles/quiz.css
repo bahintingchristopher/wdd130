@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    color: black;
+    background-color: rgb(227, 227, 237);
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+    text-align: left;
+    font-weight: bold;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: bisque;
+    display: grid;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+legend {
+  padding: 0.5rem;
+  color: navy;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+label {
+  text-align: left;
+  padding-right: 1rem;
+  text-align: left;
+  color: navy;
+  font-size: 1.5rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: rgb(32, 3, 109);
+    color: rgb(220, 218, 228);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form-item {
+    display: grid;
+    grid-gap: 0 0.5rem;
+    align-items: center;
+}
+
+.q1 {
+    display: grid;
+}
+
+.q2 {
+    display: grid;
+}
+
+.textarea {
+    height: 5.5rem;
+}
+
+.q3 {
+    display: grid;
+}
+
+.q4 {
+    display: grid;
+}
+.margin-label {
+    display: inline-block;
+    background-color: rgb(131, 124, 124);
+    border: 1px solid grey;
+    color: white;
+    padding: .5rem;
+    margin: 1rem auto;
+    width: 80%;
+    text-align: left;
+    
+}
+
+button:hover {
+  background-color: rgb(54, 6, 159); 
+  transform: scale(1.02); 
+}
