@@ -3,8 +3,8 @@
     --secondary-color: #4D7EA8;
     --accent1-color: #828489;
     --accent2-color: #9E90A2;
-    --heading-font: "Montserrat", sans-serif;
-    --body-font: "Fira Sans Condensed", sans-serif;
+    --heading-font: Roboto, sans-serif;
+    --body-font: Fira Sans Condensed, sans-serif;
 }
 
  header {
@@ -472,7 +472,13 @@ header, footer {
     border: 0px solid var(--secondary-color);
 }
 
-
+footer a {
+    font-family: var(--body-font);
+    display: inline-block;
+    margin-right: 20px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
 
 
 
