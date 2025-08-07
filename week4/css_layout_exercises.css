@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 1rem;
+	font-family: "Open Sans", sans-serif;
+    margin: 20px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+
+    
+	margin: 1rem;
+	border: 1px dashed;
+	padding: 1rem;
+}
+
+.one {
+	width: 200px;
+	height: 200px;
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+    background-color: #abb;
+	align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+	background-color: #abb;
+    place-items: center;
+	/* enter declarations here */
+	
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+	/* write declarations here */
+
+}
+
+.two {
+    background-color: #ace;
+    height: 100px;
+  
+}
+
+
+.container3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ✅ 3 equal columns */
+    gap: 10px;
+    justify-items: stretch; /* Optional, controls how cells behave */
+}
+
+.cell {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.columns-3 {
+    grid-column: 1/4;
+   	/* write declaration here */
+
+}
+
+.three {
+    display: flex; /* or grid if you want, but flex is simpler here */
+    justify-content: center;
+    align-items: center;
+    margin: 0.25rem;
+    background-color: #abd;
+    text-align: center;
+    min-height: 80px; /* optional for better vertical space */
+}

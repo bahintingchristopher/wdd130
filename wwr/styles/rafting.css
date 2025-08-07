@@ -1,0 +1,454 @@
+:root {
+    --primary-color: #272932;
+    --secondary-color: #4D7EA8;
+    --accent1-color: #828489;
+    --accent2-color: #9E90A2;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Fira Sans Condensed", sans-serif;
+}
+
+ header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center; 
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 0 20px;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+  
+       
+          
+} 
+
+.logo {
+    margin-left: 30px;    
+}
+ 
+nav {
+    justify-self: end;
+    display: flex;
+    gap: 5px;
+    padding: 10px 30px;
+    margin-right: 0;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 12px 24px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.middle-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.middle-image img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);  
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    display: grid;  
+}
+
+
+.hero img {
+    position: relative;
+    width: 100%;
+    height: auto;    
+    transform: translateX(-30px);
+}
+
+
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    color: var(--accent2-color)   
+}
+
+article {
+    display: grid;
+    position: absolute;
+    border: 2px solid var(--secondary-color);
+    color: var(--accent2-color)
+}
+
+article >h2 {
+     position: absolute;
+    left: 0;
+    top: 30%;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 20px;
+    color: var(--accent2-color);
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    }
+
+    article >h2 {
+    display: flex;
+    align-self: last baseline;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 90vh;
+  
+}
+
+section > h2 {
+    
+    flex-basis: 100%;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+section >p,
+section > .middle-image {
+    flex: 1 1 0;
+    min-width: 150px;
+}
+
+.middle-image {
+    text-align: center;
+    height: auto;
+}
+
+
+.adventure-gallery {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+    width: 130px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color:  var(--accent1-color);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px; 
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+footer .socialmedia img {
+    width: 24px;
+    height: 24px;
+}
+
+.logo {
+    margin-left: 30px;    
+}
+ 
+nav {
+    justify-self: end;
+    display: flex;
+    gap: 5px;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 12px 24px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+    transform: scale(1.1);
+    filter: brightness(1.5);  
+}
+
+h2 {
+  text-align: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.middle-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.middle-image img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);  
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    display: grid; 
+    height: 28vh; 
+}
+
+.hero > img:first-of-type {
+    visibility: hidden;
+} 
+
+.hero img {
+    display: flex;
+    width: 100%;
+    align-items: center ;
+    height: auto;    
+}
+
+article {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    position: relative;
+    top: 10px;
+    color: var(--accent1-color)
+}
+
+article h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+article p{
+    font-size: 1rem;
+    max-width: 50%;
+    margin-top: 50px;
+}
+
+
+.hero article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+
+
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    max-width: 100%;  
+    margin: 20px;
+    border: 1px solid #fff;
+    box-shadow:  #c21111 0px 0px 10px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+section > h2 {
+    flex-basis: 100%;
+    margin-bottom: 8px;
+}
+
+section >p,
+section > .middle-image {
+    flex: 1 1 0;
+    min-width: 150px;
+}
+
+.middle-image {
+    text-align: center;
+    height: auto;
+}
+
+
+.adventure-gallery {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+    text-align: center;
+    width: 130px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color:  var(--accent1-color);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px; 
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+footer p{
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+footer .socialmedia img {
+    width: 24px;
+    height: 24px;
+}
+
+.socialmedia a {
+    display: inline-block;
+    transition: 0.3s ease, filter 0.3s ease;
+}
+
+.socialmedia a:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);    
+}
+
+header, footer {
+    border: 1px solid var(--secondary-color);
+}
+
+div.hero {
+    border: 1px solid var(--secondary-color);
+    width: 840px;
+    height: 300px;
+    margin-top: 5px;
+    max-width: 100%;
+    margin-bottom: 5px;
+
+}
+
+section {
+    border: 1px solid var(--secondary-color);
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+
