@@ -1,0 +1,277 @@
+:root {
+    --primary-color: #272932;
+    --secondary-color: #4D7EA8;
+    --accent1-color: #828489;
+    --accent2-color: #9E90A2;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Fira Sans Condensed", sans-serif;
+}
+
+ header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center; 
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 0 20px;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+                   
+} 
+
+.logo {
+    margin-left: 30px;    
+}
+ 
+nav {
+    justify-self: end;
+    display: flex;
+    gap: 5px;
+    padding: 10px 30px;
+    margin-right: 0;
+    font-family: var(--body-font);
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 12px 24px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);  
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+h1 {
+padding-top: 30px; /* add space outside of the h1 */
+  
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px; 
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    
+}
+
+footer .socialmedia img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    color: var(--accent2-color);
+}
+
+.logo {
+    margin-left: 30px;    
+}
+ 
+nav {
+    justify-self: end;
+    display: flex;
+    gap: 5px;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 12px 24px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+    transform: scale(1.1);
+    filter: brightness(1.5);  
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+main {
+  background-color: var(--accent1-color);
+  max-width: 840px;
+  box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    margin: 0 ;    
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem;
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.trip-card {
+  background-color: var(--secondary-color);/* this is the background of trip images */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+  transform: scale(1.02);
+}
+
+.trip-card img {
+ 
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+.trip-card h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.trip-card p {
+  font-family: var(--body-font);
+  color: var(--primary-color);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.cta-btn {
+  display: inline-block;
+  font-size: large;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-btn:hover {
+  background-color: var(--accent2-color);
+}
+
+.trip-summary {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-family: var(--body-font);
+  background-color: var(--accent1-color);
+}
+
+.trip-summary th, .trip-summary td {
+  border: 1px solid var(--primary-color);
+  padding: 12px;
+  text-align: left;
+}
+
+.trip-summary thead {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.trip-summary tbody tr:nth-child(even) {
+  background-color: var(--accent1-color);
+}
+
+h2 {
+ 
+  color: var(--primary-color);
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+
+h2.table-title {
+  margin-bottom: 5px;  /* reduce space below the title */
+}
+
+.trip-summary {
+  margin-top: 5px;  /* reduce space above the table */
+}
+
+
+main > *:last-child {
+    margin-bottom: 0;
+}
+
+.booking {
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: inset;
+    font-size: 2rem;
+}
+
+

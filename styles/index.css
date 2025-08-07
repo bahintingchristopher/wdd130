@@ -1,0 +1,559 @@
+:root {
+    --primary-color: #272932;
+    --secondary-color: #4D7EA8;
+    --accent1-color: #828489;
+    --accent2-color: #9E90A2;
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Fira Sans Condensed", sans-serif;
+}
+
+ header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center; 
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 0 20px;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+                   
+} 
+
+.logo {
+    margin-left: 30px;    
+}
+ 
+nav {
+    justify-self: end;
+    display: flex;
+    gap: 5px;
+    padding: 10px 30px;
+    margin-right: 0;
+    font-family: var(--body-font);
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 12px 24px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header, main, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);  
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+
+h1 {
+    margin-top: 1px;  /* Adjust to move it higher */
+    font-size: 2.5rem;  /* increase the font size to x2 */
+    text-align: center;
+    color: var(--primary-color);
+}
+
+
+
+/* hero and message */
+.hero {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.hero-image {
+    display: block;
+    width: 100%; /* adjust image width */
+    height: auto;
+    border-radius: 10px; /* optional rounded corners */
+    margin-top: 1px; /* move a little bit upper */
+    
+}
+
+.company-purpose-grid {
+   background-color: var(--accent1-color); /*background-color: */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 840px;
+  margin: 2rem auto;
+  padding: 1rem;
+  margin-top: -30px; /* this move to the upper portion */
+}
+
+
+
+.company-purpose-grid .grid-item {
+  text-align: center;
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  background: var(--secondary-color);
+  border-radius: 8px;
+}
+
+.company-purpose-grid img {
+  max-width: 100%;
+  height: 250px; 
+  border-radius: 6px;
+}
+
+.company-purpose-grid h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+}
+
+/* Increase paragraph font size */
+.company-purpose-grid p {
+  font-size: 1.5rem; /* bump it up from default */
+  line-height: 1.5;   /* keep good readability */
+}
+
+
+
+
+
+
+
+
+/* Features & Services separation */
+.features-services {
+    border-top: 4px solid var(--primary-color); /* solid line at top */
+    padding-top: 2px;           /* space between border and content */
+    margin-top: 40px;            /* space from hero section */
+    background-color: var(--accent2-color)   /* optional light background for contrast */
+}
+
+
+.hero-container {
+    display: flex;
+    align-items: center; /* vertically center the text with the image */
+    justify-content: space-between; /* add space between image and text */
+    gap: 30px; /* optional: space between image and text */
+    margin-top: 20px; /* moves the image & message up */
+    gap: 5px;
+}
+
+
+
+.homepage-message {
+    width: 100%; /* takes remaining space for text */
+    max-width: 840px;
+    font-size: 1.2rem; /* adjust text size */
+    line-height: 1.5;
+    padding: 0 16px;
+    text-align: center;
+    margin-top: 20px;     /* reduce the space above the paragraph */
+}
+
+/* homepage h2 color */
+.homepage-message h2 {
+    color: var(--primary-color);
+    border-top: 4px solid var(--primary-color); /* Change thickness, style, and color  */
+    padding-top: 10px; 
+    margin-bottom: -20px;  /* reduce the space below the h2 */         /* Adds some space between the border and the text */
+}
+
+
+body {
+    width: 840px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/* main body color and width */
+.page-container {
+    max-width: 840px;
+    width: 100%;
+    background-color: var(--accent1-color); /*  blue container */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.full-width-bg {
+  width: 100%;
+  background-color: var(--accent1-color); /* replace with  hero's background color */
+  padding: 40px 0; /* vertical spacing */
+}
+
+.content-wrapper {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 0 20px; /* some horizontal padding */
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* services offered */
+.features-services {
+   padding-top: 10px;    /* less space above */
+    padding-bottom: 10px; /* less space below */
+    text-align: center;
+    background-color: var(--accent1-color); /* subtle background for separation */
+    margin-top: -70px;     /* optional: space from previous section */
+    margin-bottom: -10px;  /* optional: space to next section */
+     border-top: 4px solid var(--primary-color); /* or any color */
+}
+
+.features-services h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.features-services ul {
+    list-style-type: disc; /* bullet points */
+    list-style-position: inside;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.features-services li {
+    margin-bottom: 5px;
+}
+
+
+
+
+/* Header for Photo Gallery */
+.photo-gallery-header {
+    background-color: var(--accent1-color); /*background-color: */
+    border-top: 4px solid var(--primary-color); /* solid line at top */
+   padding-bottom: 0;
+   margin-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin-top: -35px; /* Adjust to  preference */
+    color: var(--primary-color); /* Color for the header */
+    min-height: 200px; /* adjust the height measurement */
+}
+
+
+
+/* Testimonial Slider Styling */ 
+.slider-container { 
+     background-color: var(--accent1-color); /*background-color: */
+    width: 100%; /* The container width */
+    max-width: 840px;
+    height: 460px; /* Set a fixed height for the container */
+    overflow: hidden; /* Hide overflowing content */
+    position: relative;
+    margin: 0 auto;
+    margin-top: -140px; /* this has to move the whole slider to the upper*/
+   
+}
+
+.slider {
+    display: flex;
+    width: 4200px; /* Total width of 5 testimonials (840px * 5) */
+    animation: slide 10s infinite linear; /* Adjusted animation duration for a smoother effect */
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Ensure items are aligned to the top */
+    min-width: 840px; /* Each testimonial takes full width (840px) */
+    height: 100%; /* Ensure testimonials stretch to fit the container height */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.testimonial img {
+    width: 100%; /* Ensure the image takes up full width */
+    height: 300px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensures the image covers the space properly without stretching */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Add space below the image */
+}
+
+.testimonial figcaption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: -10px;
+    color: var(--primary-color);
+}
+
+.testimonial p {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-top: 10px;
+    max-width: 100%; /* Limit text width for readability */
+    margin: 0 auto;
+    word-wrap: break-word;
+    text-align: center; /* Ensure text is aligned properly */
+}
+
+/* Animation for sliding */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Start at the initial position */
+    }
+    20% {
+        transform: translateX(0); /* Keep the first testimonial in place */
+    }
+    25% {
+        transform: translateX(-840px); /* Slide the first testimonial out */
+    }
+    45% {
+        transform: translateX(-840px); /* Keep the second testimonial in place */
+    }
+    50% {
+        transform: translateX(-1680px); /* Slide the second testimonial out */
+    }
+    70% {
+        transform: translateX(-1680px); /* Keep the third testimonial in place */
+    }
+    75% {
+        transform: translateX(-2520px); /* Slide the third testimonial out */
+    }
+    95% {
+        transform: translateX(-2520px); /* Keep the fourth testimonial in place */
+    }
+    100% {
+        transform: translateX(-3360px); /* Slide the final testimonial out */
+    }
+}
+
+
+/* Call to action */ 
+fieldset {
+    margin-top: 30px; /* moves the booking section downward */
+    padding: 0px;
+    border: none; /* optional if  don’t want the default border */
+}
+
+
+.booking {
+    text-align: center; /* Center the content */
+    padding: 20px;
+    background-color: var(--secondary-color); /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: -30px; /* Adds some spacing above the section */
+    margin-bottom: 0px; /* margin bottom*/
+}
+
+.booking h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.cta-description {
+    font-size: 2rem;
+    color: var(--primary-color);
+    
+}
+.cta-btn {
+    padding: 12px 25px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    border: 3px solid var(--primary-color); /* Add a solid border around the button */
+    display: inline-block; /* Button will be inline but can have block properties */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.cta-btn:hover {
+    background-color: var(--accent2-color); /* Darker hover color */
+}
+
+
+/* news letter */
+.newsletter-signup {
+    align-items: center;
+    
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--primary-color);
+    font-family: var(--body-font);
+    background-color: var(--accent1-color); /* light background */
+    border: 2px solid var(--primary-color); /* adds a visible border */
+}
+.newsletter-signup-wrapper {
+  margin: 0 auto;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+
+
+/*background of the news letter behind the box*/
+.newsletter-section {
+  margin-top: -2px;
+  width: 100%;
+  background-color: var(--accent1-color);
+  padding: 40px 0;
+  transform: translateX(-15.8px); /* Adjust value to move more/less left */
+  
+ }
+
+
+.newsletter-signup h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-signup form {
+    background-color: var(--accent1-color); /*background-color: */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-signup label {
+    font-weight: bold;
+    font-size: 1.5rem; /* increase the name and email label font */
+    color: var(--primary-color);
+}
+
+.newsletter-signup input[type="text"],
+.newsletter-signup input[type="email"] {
+    padding: 10px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    
+}
+
+.newsletter-signup button {
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-signup button:hover {
+    background-color: var(--accent2-color) /* darker on hover */
+    }
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px; 
+    border: 1px solid var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+footer .socialmedia img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    color: var(--accent2-color);
+}
+
+.logo {
+    margin-left: 30px;    
+}
+ 
+nav {
+    justify-self: end;
+    display: flex;
+    gap: 5px;
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 12px 24px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 6px;
+
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    font-weight: 700;
+    transform: scale(1.1);
+    filter: brightness(1.5);  
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+
