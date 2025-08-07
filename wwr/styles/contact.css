@@ -4,7 +4,7 @@
     --accent1-color: #828489;
     --accent2-color: #9E90A2;
     --heading-font: Roboto, sans-serif;
-    --body-font: "Fira Sans Condensed", sans-serif;
+    --body-font: Fira Sans Condensed, sans-serif;
 }
 
  header {
@@ -71,8 +71,8 @@ footer {
 }
 
 .title h1 {
-    padding-top: 30px; /* this has cause the title to move lower */
-  font-size: 3rem; /* this is the size of the title */
+    padding-top: 20px;
+  font-size: 2rem;
   margin: auto; /* this is the margin for top */
   color: var(--primary-color);
   font-family: var(--heading-font);
@@ -190,7 +190,7 @@ fieldset {
 
 .contact-title h2 {
   font-family: var(--heading-font);
-  
+    font-weight: 900;
   color: var(--primary-color);
   text-align: center;     
   width: 600px;  
@@ -211,19 +211,19 @@ input, select, textarea {
 
  
 .contact-title {
-  font-family: var(--body-font);
+  font-family: var(--heading-font);
   color: var(--primary-color);
-  font-size: 50px; /* cause the title to be larger */
-  padding-top: 20px;
-  text-align: center;
-  margin: 20px auto 10px auto;
-  max-width: 500px;
+  text-align: center;  
+  margin: 20px auto 10px auto;   
+  max-width: 500px;   
 }
 
 .contact-us {
 font-family: var(--heading-font);
 margin-left: 15px;
-  display: flex;  
+  display: flex;
+  
+  
   flex-direction: column;  
   justify-content: center;
   gap: 5px;
