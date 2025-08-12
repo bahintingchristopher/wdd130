@@ -39,17 +39,17 @@ nav {
 }
 
 nav a {
-    color: var(--accent2-color);
+    color: var(--accent1-color);
     text-decoration: none;
     font-weight: normal;
     padding: 12px 24px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--accent1-color);
     border-radius: 6px;
 
 }
 
 nav a:hover {
-    color: var(--secondary-color);
+    color: var(--accent1-color);
     font-weight: 700;
 }
 
@@ -116,7 +116,7 @@ footer .socialmedia img {
 }
 
 footer p {
-    color: var(--accent2-color);
+    color: var(--accent1-color);
 }
 
 .logo {
@@ -129,16 +129,6 @@ nav {
     gap: 5px;
     padding: 10px 30px;
     margin-right: 20px;
-}
-
-nav a {
-    color: var(--accent2-color);
-    text-decoration: none;
-    font-weight: normal;
-    padding: 12px 24px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 6px;
-
 }
 
 nav a:hover {
