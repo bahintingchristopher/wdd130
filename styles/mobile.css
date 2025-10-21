@@ -17,25 +17,25 @@
 
   /* Hide nav by default */
   nav {
-    position: fixed;
-    top: 30PX;
-    right: -250px ; /* hidden offscreen */
-    height: 100vh;
-    width: 80%;
-    background-color: #f5f5f5;
-    flex-direction: column;
-    align-items: start;
-    padding: 80px 20px;
-    gap: 25px;
-    box-shadow: -2px 0 6px rgba(0,0,0,0.3);
-    transition: right 0.3s ease;
-    z-index: 1000;
-  }
+  position: fixed;
+  top: 0;
+  width: 60vw;      /* 80% of viewport width */
+  height: 100dvh;   /* full viewport height */
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 20px;
+  gap: 25px;
+  box-shadow: -2px 0 6px rgba(0,0,0,0.3);
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
 
-  /* Slide-in when open */
-  nav.open {
-    right: 0;
-  }
+nav.open {
+  right: 0;
+}
+
 
   nav a {
     font-size: 1.2rem;
@@ -323,5 +323,50 @@
     padding: 15px 0;
     font-size: 1.1rem;
   }
+
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.trip-summary {
+  width: 100%;   /* full width on mobile */
+  margin-bottom: 2rem;  /* optional: adjust spacing */
+  overflow-x: auto;     /* enable horizontal scroll if needed */
+  display: block;       /* make it behave like block to respect overflow */
+}
+
+
+.trip-summary th, 
+.trip-summary td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.trip-summary th {
+  background-color: #028090;
+  color: white;
+  font-weight: 600;
+}
+
+  
+.trip-grid .trip-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #e0fbfc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
 }
 
