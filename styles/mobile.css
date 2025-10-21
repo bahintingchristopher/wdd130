@@ -98,12 +98,13 @@
   }
 
   .hero h1 {
-    font-size: 2.2rem;
-  }
+    font-size: 1.2rem;
+    margin-top: -1rem;
+    }
 
   .hero article h2 {
-    font-size: 1.5rem;
-  }
+    font-size: 1rem;
+   }
 
   .hero article img {
     margin-bottom: 15px;
@@ -265,6 +266,7 @@
 
   .company-purpose-grid .grid-item img {
     max-height: 150px;
+    margin-top: -5rem;
   }
 
   .photo-gallery-header {
