@@ -8,7 +8,8 @@
 
     <title>about us water rafting</title>
     <meta name="author" content="Christopher Bahinting">
-    <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/mobile.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,33 +18,54 @@
 
 </head>
 <body>
-    <header>
-            <img src="images/z-splash.png" alt="My rafting Logo">        
-        
-        <nav>
-            <a href="index.html" class="boxed">HOME</a>
-            <a href="about.html" class="boxed">ABOUT US</a>
-            <a href="trips.html" class="boxed">TRIPS</a>
-            <a href="contact.html" class="boxed">CONTACT US</a>
-        </nav>
-    
-    </header>
+
+<header>
+  <img src="images/z-splash.png" alt="My Rafting Logo" class="logo" loading="lazy">
+
+  <!-- Hamburger Button -->
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="index.html" class="boxed">HOME</a>
+    <a href="about.html" class="boxed">ABOUT US</a>
+    <a href="trips.html" class="boxed">TRIPS</a>
+    <a href="contact.html" class="boxed">CONTACT US</a>
+    <a href="faqs.html">FAQs</a>
+     <div class="nav-socialmedia">
+            <a href="https://www.facebook.com/">
+            <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://www.youtube.com/">
+            <img src="images/youtube.webp" alt="YouTube">
+            </a>
+            <a href="https://www.instagram.com/">
+            <img src="images/instagram.webp" alt="Instagram">
+            </a>
+        </div>
+  </nav>
+</header>
+
 <main class="main-black">
     <div class="hero">
         <h1>Charity Whitewater Tours</h1>
     <article>
         <h2>Thrilling Rafting Adventure</h2>
-        <img src="images/rafting.jpg" alt="happy people rafting on the river">
+        <img src="images/beginner-adventure.jpg" alt="happy people rafting on the river" loading="lazy">
         <p>To deliver high-octane splash adventures powered by banana-fueled team spirit and rubber duck wisdom.</p>
     </article>
     </div>
 
     <section>
         <h2>History</h2>
-        <p>Charity Whitewater Tours was founded in the early 2000s by a group of adventure-loving locals, Cagayan de Oro began with a single raft and a big dream — to turn the mighty Cagayan River into the ultimate playground. </p>
+        <p>Charity Whitewater Tours was founded in the early 2010s by a group of adventure-loving locals, Cagayan de Oro began with a single raft and a big dream — to turn the mighty Cagayan River into the ultimate playground. </p>
 
         <div class="middle-image">
-            <img src="images/background.jpg" alt="rafting image">
+            <img src="images/background.jpg" alt="rafting image" loading="lazy">
         </div>
 
         <p>What started as weekend trips for friends quickly grew into one of the city's top eco-tourism attractions. Today, we guide thousands of thrill-seekers each year, proudly sharing the river's rush and the spirit of Mindanao.</p>
@@ -62,31 +84,35 @@
             </figure>
 
             <figure>
-                <img src="images/water-rafting2.jpg" alt="adventurers navigating a white water rapids">
+                <img src="images/water-rafting2.jpg" alt="adventurers navigating a white water rapids" loading="lazy">
                 <figcaption>adventurers navigating a white water rapids</figcaption>
             </figure>
 
             <figure>
-                <img src="images/water-rafting3.jpg" alt="exciting rafting trip with people paddling through rough water">
+                <img src="images/water-rafting3.jpg" alt="exciting rafting trip with people paddling through rough water" loading="lazy">
                 <figcaption>exciting rafting trip with people paddling through rough water</figcaption>
             </figure>
 
             <figure>
-                <img src="images/water-rafting4.jpg" alt="close up view of rafting team navigating turbulent water">
+                <img src="images/water-rafting4.jpg" alt="close up view of rafting team navigating turbulent water" loading="lazy">
                 <figcaption>close up view of rafting team navigating turbulent water</figcaption>
             </figure>
 
             <figure>
-                <img src="images/water-rafting5.jpg" alt="rafting boat filled with adventurers">
+                <img src="images/water-rafting5.jpg" alt="rafting boat filled with adventurers" loading="lazy">
                 <figcaption>rafting boat filled with adventurers</figcaption>
             </figure>
         </div>
     </section>
 
 </main>
+
+<script src="scripts/wwr.js" defer></script>
+
 <footer>
     <p>&copy; 2025 | Charity Whitewater Tours | Christopher T. Bahinting </p>
-    <nav class="socialmedia">
+
+    <div class="socialmedia">
         <a href="https://www.facebook.com/">
         <img src="images/facebook.webp" alt="Follow us on Facebook for more updates on our rafting trips">
         </a>
@@ -96,9 +122,8 @@
         <a href="https://www.instagram.com/">
             <img src="images/instagram.webp" alt="visit us on instagram anytime and all the time">
         </a>
-    </nav>
-
-
+    </div>
 </footer>
+
 </body>
 </html>
