@@ -155,7 +155,12 @@
   .happy-image {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 100px;
+}
+
+.happy-image .image-block {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 
@@ -216,7 +221,6 @@
     align-items: flex-start;       /* left align */
     gap: 12px;
     padding: 10px 15px;
-    max-width: 400px;
     margin: 0 auto;                /* center the group container */
   }
 
