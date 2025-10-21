@@ -40,15 +40,11 @@ nav a {
     text-decoration: none;
     font-weight: normal;
     padding: 12px 24px;
-     border: 2px solid blue;
+     border: 1px solid var(--secondary-color);
     border-radius: 6px;
 
 }
 
-nav a:hover {
-    color: var(--secondary-color);
-    font-weight: 700;
-}
 
 h2 {
   text-align: center;
@@ -203,17 +199,13 @@ section > .middle-image {
 
 
 footer {
+    min-height: 100px; /* height of footer*/
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 1px; 
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
-}
-
-footer .socialmedia img {
-    width: 24px;
-    height: 24px;
 }
 
 .logo {
@@ -228,21 +220,14 @@ nav {
     margin-right: 20px;
 }
 
-nav a {
-    color: var(--accent2-color);
-    text-decoration: none;
-    font-weight: normal;
-    padding: 12px 24px;
-    border: 1px solid var(--primary-color);
-    border-radius: 6px;
 
-}
+
 
 nav a:hover {
     color: var(--secondary-color);
     font-weight: 700;
     transform: scale(1.1);
-    filter: brightness(1.5);  
+    filter: brightness(1.1);  
 }
 
 h2 {
@@ -288,9 +273,6 @@ nav, p, section, article {
     padding: 8px;
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
 
 .hero {
     position: relative;
@@ -405,32 +387,50 @@ section > .middle-image {
 
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 1px; 
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
 }
-footer p{
+/* social media logo settings */
+    footer .socialmedia {
+    display: flex;
+    margin-right: 10px;
+    
+}
+
+footer p{ /* footer p settings */
     margin: 0;
-    text-align: center;
+    text-align: left;
     flex: 1;
 }
 
+/* Social media link container */
+.socialmedia a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 6px; /* space between icons */
+    transition: 0.3s ease, filter 0.3s ease;
+    
+}
+
+/* Social media icons (inside footer) */
 footer .socialmedia img {
     width: 24px;
-    height: 24px;
+    height: 24px;   
+    border: 1px solid var(--secondary-color);
+    padding: 15px;
+    border-radius: 10%; /* circular shape */    
+    box-sizing: content-box; /* ensures padding doesn't shrink image */
+    }
+
+/* Hover effect for icons */
+.socialmedia a:hover img {
+    transform: scale(1.5);
+    filter: brightness(1.5);
 }
 
-.socialmedia a {
-    display: inline-block;
-    transition: 0.3s ease, filter 0.3s ease;
-}
-
-.socialmedia a:hover {
-    transform: scale(1.1);
-    filter: brightness(1.5);    
-}
 
 header, footer {
     border: 1px solid var(--secondary-color);
@@ -480,8 +480,3 @@ body {
     color: var(--primary-color); /* header font color */
 }
 
-nav a.boxed {
-  display: inline-block;
-  padding: 10px 20px;
-  border: 1px solid var(--secondary-color);
-}
