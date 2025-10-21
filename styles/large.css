@@ -236,22 +236,22 @@ section p {
 
 .title {
   max-width: 1100px;
-  margin: 40px auto 60px;
+
   padding: 0 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .title h1 {
-  font-size: 2.8rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-bottom: 40px;
   color: #023047;
 }
 
 .happy-image {
-  display: flex;
-  justify-content: space-between;
-  gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
 .image-block {
@@ -724,7 +724,9 @@ h1, h2 {
   margin-bottom: 3rem;
 }
 
-.trip-card {
+ .trip-grid .trip-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #e0fbfc;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
