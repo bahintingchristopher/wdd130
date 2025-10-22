@@ -1,0 +1,413 @@
+@media (max-width: 600px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1100;
+    cursor: pointer;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    /* right: -60vw; hidden off-screen */
+    width: 60vw;
+    height: 100dvh;
+    background-color: #f5f5f5;
+    padding: 80px 20px;
+    box-shadow: -2px 0 6px rgba(0,0,0,0.3);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+  nav.open {
+    right: 0; /* slide into view */
+  }
+
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+/*footer*/
+/* mobile.css */
+
+@media (max-width: 600px) {
+  footer {
+    padding: 20px 15px;
+    font-size: 0.9rem;
+  }
+
+  footer p {
+    margin-bottom: 15px;
+  }
+
+@media (max-width: 600px) {
+  footer {
+    display: flex;
+    flex-direction: column;     /* Stack text and icons vertically */
+    align-items: center;        /* Center all footer contents */
+    text-align: center;
+    padding: 16px;
+  }
+
+  nav.socialmedia {
+    display: flex;
+    flex-direction: row;        /* Make icons horizontal */
+    justify-content: center;    /* Center them horizontally */
+    align-items: center;        /* Align vertically in the middle */
+    gap: 20px;                  /* Space between icons */
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  nav.socialmedia a img {
+    width: 36px;
+    height: 36px;
+    display: block;
+  }
+
+
+
+
+/*INDEX*/
+.page-container h1 {
+    color: blue;
+      font-size: 1.5rem !important;
+      text-align: center;
+      margin-left: -10px !important;
+      margin-right: -10px!important;
+     
+}
+
+
+
+
+}
+
+
+
+
+
+
+/*about mobile*/
+
+@media (max-width: 600px) {
+  .main-black {
+    padding: 20px 15px;
+    font-size: 1rem;
+  }
+
+  .main-black .hero h1{
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  .main-black .hero h2{
+    font-size: 1.5rem;
+    color: blue;
+
+  }
+  
+  .hero article img {
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+
+  section {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+  }
+
+  section p {
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+
+  .middle-image img {
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+
+  .adventure-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .adventure-gallery figure {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+  }
+
+  .adventure-gallery figcaption {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+}
+
+/* CONTACT - mobile.css */
+@media (max-width: 600px) {
+  /* --- General Layout --- */
+  .main-black {
+    padding: 20px 15px;
+    font-size: 1rem;
+  }
+
+  .happy-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  }
+
+.happy-image .image-block {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero article h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero article img {
+    margin-bottom: 15px;
+    border-radius: 8px;
+  }
+
+  section {
+    margin-top: 40px;
+    padding: 0 10px;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+  }
+
+  section p {
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+
+  .middle-image img {
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+
+  .adventure-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .adventure-gallery figure {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+  }
+
+  .adventure-gallery figcaption {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  /* --- Contact Form: Radio Buttons --- */
+  .why-are-you-contacting-us {
+    display: flex;
+    flex-direction: column;        /* stack vertically */
+    align-items: flex-start;       /* left align */
+    gap: 12px;
+    padding: 10px 15px;
+    margin: 0 auto;                /* center the group container */
+  }
+
+  .why-are-you-contacting-us-label {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;            /* label centered */
+  }
+
+  /* Each radio input + label container */
+  .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .radio-label input[type="radio"] {
+    accent-color: #0077cc;
+    transform: scale(1.2);
+    cursor: pointer;
+    margin: 0; /* reset any default margin */
+  }
+}
+
+/*TRIP*/
+ .trip h1 {
+  font-size: 1.5rem;
+  margin-bottom: -2rem;
+}
+
+
+/*faqs*/
+.faq-container .faqs h1 {
+  font-size: 1.5rem;
+  margin-bottom: -.1rem;
+  text-align: left;
+  border-bottom: 1px solid blue;
+}
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .hero-title {
+    font-size: 1.8rem;
+    padding: 0 10px;
+    text-align: left;
+  }
+
+  .homepage-message {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .company-purpose-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .company-purpose-grid .grid-item img {
+    max-height: 150px;
+    margin-top: -5rem;
+  }
+
+  .photo-gallery-header {
+    font-size: 1.5rem;
+    margin: 30px 10px 15px;
+  }
+
+  .slider {
+    flex-direction: column;
+    overflow-x: visible;
+    gap: 15px;
+  }
+
+  .testimonial {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .newsletter-signup {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .newsletter-signup h2 {
+    font-size: 1.4rem;
+  }
+
+  .newsletter-signup input, 
+  .newsletter-signup button {
+    font-size: 1rem;
+  }
+
+  .newsletter-signup button {
+    width: 100%;
+    padding: 12px 0;
+  }
+
+  .booking {
+    margin: 40px 10px 60px;
+    padding: 25px 15px;
+  }
+
+  .booking h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-description {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.1rem;
+  }
+
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.trip-summary {
+  width: 100%;   /* full width on mobile */
+  margin-bottom: 2rem;  /* optional: adjust spacing */
+  overflow-x: auto;     /* enable horizontal scroll if needed */
+  display: block;       /* make it behave like block to respect overflow */
+}
+
+
+.trip-summary th, 
+.trip-summary td {
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+.trip-summary th {
+  background-color: #028090;
+  color: white;
+  font-weight: 600;
+}
+
+  
+.trip-grid .trip-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #e0fbfc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+}
+
