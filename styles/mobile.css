@@ -78,7 +78,25 @@
     height: 36px;
     display: block;
   }
+
+
+
+
+/*INDEX*/
+.page-container h1 {
+    color: blue;
+      font-size: 1.5rem !important;
+      text-align: center;
+      margin-left: -10px !important;
+      margin-right: -10px!important;
+     
 }
+
+
+
+
+}
+
 
 
 
@@ -92,15 +110,17 @@
     font-size: 1rem;
   }
 
-  .hero h1 {
-    font-size: 1.2rem;
-    margin-top: -1rem;
-    }
+  .main-black .hero h1{
+    font-size: 1.5rem;
+    color: black;
+  }
 
-  .hero article h2 {
-    font-size: 1rem;
-   }
+  .main-black .hero h2{
+    font-size: 1.5rem;
+    color: blue;
 
+  }
+  
   .hero article img {
     margin-bottom: 15px;
     border-radius: 8px;
@@ -155,8 +175,7 @@
   .happy-image {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 100px;
-}
+  }
 
 .happy-image .image-block {
   display: grid;
@@ -249,9 +268,24 @@
     margin: 0; /* reset any default margin */
   }
 }
+
+/*TRIP*/
+ .trip h1 {
+  font-size: 1.5rem;
+  margin-bottom: -2rem;
 }
 
-/* ---------- MOBILE SCREENS (600px and below) ---------- */
+
+/*faqs*/
+.faq-container .faqs h1 {
+  font-size: 1.5rem;
+  margin-bottom: -.1rem;
+  text-align: left;
+  border-bottom: 1px solid blue;
+}
+
+
+}
 
 @media screen and (max-width: 600px) {
   .hero-title {
