@@ -299,6 +299,8 @@
     padding: 0 15px;
   }
 
+
+
   .company-purpose-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -307,7 +309,7 @@
 
   .company-purpose-grid .grid-item img {
     max-height: 150px;
-    margin-top: -5rem;
+   
   }
 
   .photo-gallery-header {
